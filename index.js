@@ -16,4 +16,4 @@ bot.on('ready', function(){
     console.log('Ready')
 });
 
-client.login(process.env.BOT_TOKEN);
+client.login(process.env.NDk4OTc3MTg2NTA2NzM1NjI4.Dp6OLA.uhjy9jcYIpo0uFp9fuwSGhnHFiw);
