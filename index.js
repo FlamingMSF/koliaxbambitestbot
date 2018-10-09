@@ -16,4 +16,4 @@ bot.on('ready', function(){
     console.log('Ready')
 });
 
-bot.login(BOT_TOKEN);
+bot.login('BOT_TOKEN');
