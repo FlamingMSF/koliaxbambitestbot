@@ -1,5 +1,5 @@
-const Commando = require('discord.js-commando');
-const bot = new Commando.Client();
+const Discord = require('discord.js');
+const client = new Discord.Client();
 
 bot.registry.registerGroup('simple', 'simple');
 bot.registry.registerDefaults();
@@ -16,4 +16,4 @@ bot.on('ready', function(){
     console.log('Ready')
 });
 
-bot.login('BOT_TOKEN');
+client.login(process.env.TOKEN);
