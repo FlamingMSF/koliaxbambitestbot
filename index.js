@@ -1,16 +1,11 @@
-//@ts-check
 const { Client } = require('discord.js');
 const commando = require('discord.js-commando');
 const discord = require('discord.js');
 var guilds = require('discord.js');
-// @ts-ignore
 const bot = new commando.Client({
     commandPrefix: '\\'
     });
 const client = new discord.Client();
-// @ts-ignore
-const TOKEN = require('./tokens.json');
-// @ts-ignore
 const config = require('./tokens.json');
 global.servers = {};
 
@@ -69,4 +64,4 @@ bot.on("message", message => {
 bot.on('ready', function(){
     console.log('Ready')
 });
-bot.login(TOKEN.TOKEN)
+bot.login(TOKEN)
