@@ -1,2 +1,2 @@
-# KoliaXBambiTestBot
-A test bot for KoliaXBambi
+// PokeResourceBot
+A test bot for experimenting
