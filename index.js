@@ -64,4 +64,4 @@ bot.on("message", message => {
 bot.on('ready', function(){
     console.log('Ready')
 });
-bot.login(TOKEN)
+bot.login(process.env.TOKEN)
