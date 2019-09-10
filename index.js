@@ -23,6 +23,11 @@ bot.on('message', function(message){
 channel.send(`${pokePingObject} A pokémon has spawned.\n  Time: ` + ts.toLocaleTimeString() +'\n  Date: '+ ts.toDateString());
     }
 });
+bot.on('message', function(message){
+  if (message.channel.name != "auto-purge" || message.author.bot)
+  return;
+  else message.delete()
+});
 function clean(text) {
   if (typeof(text) === "string")
     return text.replace(/`/g, "`" + String.fromCharCode(8203)).replace(/@/g, "@" + String.fromCharCode(8203));
